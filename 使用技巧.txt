@@ -1,0 +1,31 @@
+1.添加SSH密钥
+(1)创建密钥
+$ ssh-keygen -t rsa -C “邮箱”
+(2)在GitHub上添加密钥
+(3)测试是否成功
+$ ssh -T git@github.com
+
+2.设置自己的名字和邮箱
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+
+3.在本地创建版本库：
+(1)cd /e/LocalGithub/
+(2)变为Git管理的仓库
+$ git init
+
+4.添加远程库与本地库连接
+$ git remote add origin 自己的版本库链接
+
+5.传输文件
+(1)添加到本地仓库
+$ git add .
+(2)添加提交描述
+$ git commit -m '内容'
+(3)把本地仓库代码提交
+$ git push -u origin master
+
+错误解决汇总：
+1.合并Github和本地代码仓库命令
+$ git pull --rebase origin master
+
