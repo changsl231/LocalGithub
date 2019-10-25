@@ -4,6 +4,8 @@ $ ssh-keygen -t rsa -C “邮箱”
 (2)在GitHub上添加密钥
 (3)测试是否成功
 $ ssh -T git@github.com
+(4)ubuntu查看id_rsa.pub文件
+cat .ssh/id_rsa.pub
 
 2.设置自己的名字和邮箱
 $ git config --global user.name "Your Name"
